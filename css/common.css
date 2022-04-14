@@ -116,16 +116,18 @@ footer{
 
 @media only screen and (max-width:1190px){
 
-.f_list >div, .f_cont{
-    width: 95%;
-}
-
+    .f_list >div, .f_cont{
+        width: 1000px;
+    }
 
 }
 
 
 @media only screen and (max-width:1000px){
     
+    .f_list >div, .f_cont{
+        width: 95%;
+    }
 }
 
 

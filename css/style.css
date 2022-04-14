@@ -7,6 +7,10 @@ body{
     overflow-x: hidden;
 }
 
+
+main{
+    width: 100%;
+}
 .sub_nav{
     width: 100%;
     background-color: #fff;
@@ -72,12 +76,12 @@ body{
 }
 
 
-span{
+.inner span{
     font-size: 1.12rem;
     color: #111987;
 }
 
-h3 {
+.inner h3 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #111987;
@@ -85,7 +89,7 @@ h3 {
     
 }
 
-p{  
+.sec1 p, .sec2 p{  
     line-height: 2.2rem;
     color: #343A40;
     margin-top: 30px;
@@ -176,22 +180,14 @@ p{
 }
 
 .inner2 > h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111987;
+    margin-top: 10px;
     position: relative;
     display: inline;
     text-align: center;
 }
-/* 
-.inner2 > h3::after{
-    content: "";
-    position: absolute;
-    width: 90%;
-    height: 4px;
-    bottom: -10px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: #0C1157;
-} */
-
 
 
 .map_wrap{
@@ -216,7 +212,7 @@ p{
     margin-top: 20px;
 }
 
-h5{
+.sec3 h5{
     font-size: 1.75rem;
     font-weight: 600;
     color: #111987;
@@ -236,6 +232,9 @@ h5{
 }
 
 .sec3 p{
+    color: #343A40;
+    word-break: keep-all;
+    letter-spacing: -1px;
     margin-top: 10px;
     line-height: 2rem;
 }
@@ -267,7 +266,7 @@ h5{
 
 .sec4{
     width: 100%;
-    padding-top: 190px;
+    padding: 160px 0;
     box-sizing: border-box;
 }
 
@@ -295,12 +294,17 @@ h5{
 }
 
 .sec4 .inner h3{
+    font-size: 2.5rem;
+    font-weight: 600;
     color: #fff;
     display: block;
     margin: auto;
 }
 
 .sec4 .inner h5{
+    font-size: 1.75rem;
+    font-weight: 600;
+    position: relative;
     color: #009BA9;
     display: block;
     margin: auto;
@@ -313,10 +317,249 @@ h5{
 }
 
 .sec4 .inner p{
+    line-height: 2.2rem;
+    word-break: keep-all;
+    letter-spacing: -1px;
     color: #8B8BCE;
     display: block;
     margin: auto;
 }
+/**********************공지사항페이지*********************/
+
+
+
+.notice{
+    width: 1190px;
+    margin: auto;
+}
+
+
+.notice h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111987;
+    margin: 80px 0;
+    text-align: center;
+}
+
+.notice h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343A40;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+
+.notice p{  
+    line-height: 2.2rem;
+    color: #343A40;
+    margin-top: 30px;
+    word-break: keep-all;
+    letter-spacing: -1px;
+}
+
+
+.noti_top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.16em;
+}
+
+.noti_top h5{
+    line-height: 2.5rem;
+}
+
+.h_span{
+    font-size: 2.25rem;
+    line-height: 1.5rem;
+    vertical-align: text-top;
+    color: #111987;
+}
+
+.noti_top_wrap{
+    display: flex;
+}
+
+.dropdown{
+    width: 200px;
+    flex: 0 1 200px;
+    margin-right: 1rem;
+}
+
+.dropdown_toggle{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding: 0 1em;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #495057;
+    border: 1px solid #ADB5BD;
+    cursor: pointer;
+}
+
+.dropdown_toggle::after{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-left: 1px solid #ADB5BD;
+    background-image: url(../img/arrow03_r.png);
+    background-position: right center;
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    margin-left:calc(100% - 68px);
+}
+
+.form_srch{
+    width: 400px;
+    flex: 0 1 400px;
+    position: relative;
+}
+
+.form_srch > input{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding: 15px 72px 15px 20px;
+    border: 1px solid #ADB5BD;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.form_srch > button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    background-color: #232BA5;
+    border: none;
+    outline: none;
+    background-image: url(../img/icon-search.png);
+    background-size: 29px 29px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.table_wrap >table{
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529 !important;
+    border-top: 2px solid #495057;
+}
+
+
+thead th{
+    border-bottom: 1px solid #ADB5BD;
+    background: #F5FAFF;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.34rem;
+    padding: 0.66rem 1rem;
+}
+
+tbody tr{
+    border-bottom: 1px solid #CED4DA;
+    text-align: center;
+}
+
+tbody td{
+    padding: 1.5rem 1rem;
+}
+
+tbody span{
+    font-size: 1rem;
+}
+
+tbody a{
+    color: #212529;
+}
+
+.txt_left{
+    text-align: left;
+}
+
+
+.badge{
+    display: inline-block;
+    color: #fff;
+    background-color: #111987;
+    padding: 0 15px;
+    border-radius: 9em;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.pn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.16em 0;
+}
+
+.pn li {
+    margin: 0 5px;
+    font-weight: 300;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.pn li a {
+    color: #ADB5BD;
+    line-height: 50px;
+    display: block;
+}
+
+.pn .active{
+    background-color: #111987;
+}
+.pn .active >a{
+    color: #fff;
+}
+
+.pn_icon{
+    border: 1px solid #CED4DA;    
+    background-color: #fff;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pn .first{
+    background-image: url(../img/page-prevgroup.png);
+    background-size: 10px auto;
+}
+.pn .prev{
+    background-image: url(../img/page-prev.png);
+    background-size: 8px auto;
+}
+.pn .next{
+    background-image: url(../img/page-prev.png);
+    background-size: 8px auto;
+    transform: scale(-1,1);
+}
+.pn .last{
+    background-image: url(../img/page-prevgroup.png);
+    background-size: 10px auto;
+    transform: scale(-1,1);
+}
+
+
 
 
 @media only screen and (max-width:1190px){
@@ -325,7 +568,7 @@ h5{
     }
     
     
-    .sub_nav > ul, .inner, .inner2{
+    .sub_nav > ul, .inner, .inner2, .notice{
         width: 1000px;
     }
 
@@ -335,7 +578,7 @@ h5{
 
     
     .sub_active::after{
-        bottom: -8px;
+        bottom: -7px;
     }
 
     .sec1{
@@ -352,7 +595,7 @@ h5{
     }
 
     .sec4{
-        padding-top: 160px; 
+        padding: 140px 0; 
     }
 
 
@@ -362,11 +605,13 @@ h5{
 
 @media only screen and (max-width:1000px){
 
-.sub_nav > ul, .inner, .inner2{
+.sub_nav > ul, .inner, .inner2, .notice{
         width: 95%;
     }
 
-    p{
+
+
+    .sec1 p, .sec2 p{
         line-height: 1.8rem;
         width: 42vw;
     }
@@ -423,12 +668,67 @@ h5{
     .map_wrap ul{
         margin-right: 0;
     }
+
+
+
+    /*****************공지사항*********************/
+
+    .noti_top{
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .noti_top_wrap{
+        display: block;
+    }
+
+    .notice h5{
+        margin-top: 20px;
+    }
+
+    .dropdown {
+        width: 100%;
+        flex: 0 1 200px;
+        margin-right: 0;
+    }
+
+    .dropdown_toggle{
+        width: 100%;
+    }
+ 
+    .form_srch{
+        width: 100%;
+        margin-top: 10px;
+    }
+
 }
 
 
 @media only screen and (max-width:780px){
+    .dis_none{
+        display: none;
+    }
+    
+    /* ::-webkit-scrollbar{
+        display: none;
+    } */
     html{
         font-size: 14px;
+    }
+
+    .sub_nav{
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+
+    .sub_nav > ul{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .sub_nav > ul li{
+        flex-shrink: 0;
     }
 
     .sec1{
@@ -452,7 +752,7 @@ h5{
     }
 
 
-    p {
+    .inner p, .sec3 p {
 
         width: 100%;
     }
@@ -503,7 +803,7 @@ h5{
     }
 
     .sec4 {
-        padding-top: 50px;
+        padding: 0 0 50px;
     }
     .sec4 .inner h3 {
         display: none;
@@ -511,5 +811,46 @@ h5{
 
     .sec4 .inner p {
         text-align: center;
+    }
+
+
+    /********************공지사항페이지**********************/
+    
+    thead{
+        display: none;
+    }
+
+    col:first-child{
+        width: 100%;
+    }
+
+    tbody tr{
+        display: block;
+        padding: 20px 0;
+    }
+    tbody td{
+        display: block;
+        padding: 0;
+    }
+
+    tbody tr >*{
+        border: none;
+        white-space: normal;
+        text-align: left;
+    }
+
+    tbody td{
+        color: #495057;
+    }
+
+
+
+    .pn li {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .pn li a {
+        line-height: 30px;
     }
 }
