@@ -36,7 +36,6 @@ h5{
 
 span{
     font-size: 1.12rem;
-
 }
 
 
@@ -304,9 +303,8 @@ tbody a{
         font-size: 15px;
     }
     
-
-    .sub_nav > ul{
-        width: 1000px;
+    section, .sub_nav > ul{
+        width: 95%;
     }
 
     .sub_nav > ul{
@@ -317,19 +315,13 @@ tbody a{
         bottom: -8px;
     }
 
-    section{
-        width: 95%;
-    }
+    
 
 }
 
 
 
 @media only screen and (max-width:1000px){
-
-    .sub_nav > ul{
-        width: 95%;
-    }
 
     .noti_top{
         display: block;

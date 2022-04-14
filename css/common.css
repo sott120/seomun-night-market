@@ -1,0 +1,160 @@
+.dis_block{
+    display:none
+}
+
+footer{
+    width: 100%;
+    background-color: #0C1157;
+
+}
+
+.f_list{
+    border-bottom: 1px solid #4B4B81;
+}
+
+.f_list >div{
+    width: 1100px;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_list ul{
+    display: flex;   
+}
+
+.f_list li a{
+    display: block;
+    color: #C2C2D6;
+    line-height: 5rem;
+    padding-right: 50px;
+}
+
+.f_list span{
+    color: #C2C2D6;
+    line-height: 5rem;
+}
+
+.f_cont{
+    width: 1100px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.f_logo{
+    margin-right: 30px;
+}
+
+.f_logo h2{
+    width: 160px;
+}
+.f_logo img{
+    width: 100%;
+    opacity: .5;
+}
+
+.f_txt p {
+    line-height: 1.5rem;
+    color: #C2C2D6;
+    margin: 0;
+    word-break: keep-all;
+    letter-spacing: 0;
+}
+
+.f_txt p:last-child{
+    color: #7F7FA4;
+}
+
+.fm_ico{
+    display: none;
+}
+.fm_ico i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.f_ico{
+    display: flex;
+    margin-left: auto!important;
+
+}
+
+.f_ico i{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.f_ico a:first-child i{
+    margin-left: 10px;
+}
+.f_ico a:not(:last-child) i{
+    margin-right: 5px;
+}
+
+.icon_ft_talk{
+    background-image: url(../img/icon-ft-talk.svg);
+}
+
+.icon_ft_fb{
+    background-image: url(../img/icon-ft-fb.svg);
+}
+
+.icon_ft_blog{
+    background-image: url(../img/icon-ft-blog.svg);
+}
+
+.icon_ft_yt{
+    background-image: url(../img/icon-ft-yt.svg);
+}
+
+
+
+@media only screen and (max-width:1190px){
+
+.f_list >div, .f_cont{
+    width: 95%;
+}
+
+
+}
+
+
+@media only screen and (max-width:1000px){
+    
+}
+
+
+
+@media only screen and (max-width:780px){
+    .dis_block{
+        display: block;
+    }
+    .f_list li a {
+        padding-right: 42px;
+    }
+    .fm_ico{
+        display: flex;
+        padding: 16px 0;
+    }
+    
+    .f_ico{
+        display: none;
+    }
+    
+    
+    .f_cont{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px 0;
+    }
+    
+
+    .f_txt{
+        padding: 16px 0;
+    }
+}
