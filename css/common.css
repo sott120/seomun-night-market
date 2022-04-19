@@ -1,9 +1,7 @@
 
-
-
 header{
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color: #0C1157;
     position: sticky;
     top:0;
@@ -32,10 +30,6 @@ header> .inner{
 
 .navi{
     display: flex;
-}
-
-.navi >li{
-    
 }
 
 .navi >li >a{

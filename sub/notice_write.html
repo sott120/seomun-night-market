@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서문시장야시장</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/notice_write.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -35,73 +35,59 @@
             </div>
         </div>   
     </header>
-    <main>   
-        <section class="main_bnr">
-            <div class="bnr_wrap">
-                <p>서문시장야시장과 함께라면 대구의 밤은 곧 파티다!</p>
-                <h2>서문시장 야시장</h2>
-            </div>
-            <div class="slide_nav">
-                <span>01</span>
-                <span class="slide_nav_ac"></span>
-                <span></span>
-                <span>02</span>
-            </div>
-        </section>
+    <main>
         <section>
-
-        </section>
-        <section>
-
-        </section>
-        <section class="gallery">
-            <article>
-
-            </article>
-        </section>
-        <section class="icon_cate">
-            <article class="inner">
-                <ul class="cate_list">
-                    <li><a href="#">
-                        <div><img src="img/index/section4_market.png"></div>
-                        <p>시장안내</p>
-                    </a></li>
-                    <li><a href="#">
-                        <div><img src="img/index/section4_map.png"></div>
-                        <p>야시장구성</p>
-                    </a></li>
-                    <li><a href="#">
-                        <div><img src="img/index/section4_food.png"></div>
-                        <p>먹거리</p>
-                    </a></li>
-                    <li><a href="#">
-                        <div><img src="img/index/section4_culture.png"></div>
-                        <p>문화예술</p>
-                    </a></li>
-                    <li><a href="#">
-                        <div><img src="img/index/section4_3tour.png"></div>
-                        <p>주변관광지</p>
-                    </a></li>
-                    <li><a href="#">
-                        <div><img src="img/index/section4_foodseller.png"></div>
-                        <p>식품셀러모집</p>
-                    </a></li>
-                    <li><a href="#">
-                        <div><img src="img/index/section4_fleamarket.png"></div>
-                        <p>플리마켓셀러모집</p>
-                    </a></li>
-                </ul>
-            </article>
-        </section>
-        <section class="f_img">
-            <article class="inner">
-                <div><img src="img/index/footer_banner01.jpg" alt=""></div>
-                <div><img src="img/index/footer_banner02.jpg" alt=""></div>
-                <div><img src="img/index/footer_banner03.jpg" alt=""></div>
-                <div><img src="img/index/footer_banner04.jpg" alt=""></div>
-                <div><img src="img/index/footer_banner05.jpg" alt=""></div>
-                <div><img src="img/index/footer_banner06.jpg" alt=""></div>
-            </article>
+            <h2>공지사항 작성하기</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label>제목 :</label></td>
+                        <td><input type="text" id="noti_title"></td>
+                    </tr>
+                    <tr>
+                        <td><label>이름 :</label></td>
+                        <td><input type="text" id="noti_name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>비밀번호 :</label></td>
+                        <td><input type="password" id="noti_pass"></td>
+                    </tr>
+                    <tr>
+                        <td><label>날짜 :</label></td>
+                        <td>
+                            <input type="text" id="noti_date_1" placeholder="YYYY">년
+                            <select name="" id="noti_date_2">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>월
+                            <input type="text" id="noti_date_3" placeholder="DD">일
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>내용작성 :</td>
+                        <td><textarea  cols="100" rows="10" id="noti_cont"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>첨부파일 :</td>
+                        <td><input type="button" id="noti_file" value="첨부"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="저장">
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </section>
     </main>
     <footer>
@@ -117,11 +103,7 @@
             </div>    
             <div class="f_cont">
                 <div class="f_logo">
-                    <h2>
-                        <a href="">
-                            <img src="../img/noimg_big2.png" alt="">
-                            <img src="img/noimg_big2.png" alt="">
-                        </a></h2>
+                    <h2><a href=""><img src="../img/noimg_big2.png" alt=""></a></h2>
                 </div>
                 <div class="f_txt">
                     <p>대구  남구 대명로 215 대구광역시상인회관4층
