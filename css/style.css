@@ -107,6 +107,7 @@ main{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .sec1_txt{
@@ -615,18 +616,27 @@ tbody a{
     background-size: cover;
 }
 
-.bnr_wrap >h2{
+.main_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bnr_wrap h2{
     color: #fff;
     font-size: 4rem;
     font-weight: 600;
     text-align: center;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
 }
 
-.bnr_wrap >p{
+.bnr_wrap p{
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 200;
     text-align: center;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
 }
 
 .bnr_wrap::after{
@@ -667,6 +677,180 @@ tbody a{
     background-color:#111987;
 }
 
+/* 메인 카드배너 */
+
+.card_bnr{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.main_tile{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.main_tile h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111987;
+}
+
+.main_tile p{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+
+.card_wrap{
+    width: 1190px;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-left: -5px;
+}
+
+.card >li{
+    position: relative;
+    width: calc(25% - 10px);
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+.card a::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p{
+    position: absolute;
+    top: 30px;
+    left: 2rem;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+.card span{
+    position: absolute;
+    top: 80px;
+    left: 2rem;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+
+/* 메인 공지/ 운영시간 */
+
+.card_bnr article h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111987;
+    padding-bottom: 3rem;
+}
+
+
+.main_notice{
+    flex: 6;
+    margin-right: 10px;
+}
+
+.main_noti_nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_noti_nav::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #CED4DA;
+
+
+}
+
+.main_noti_nav >li{
+    width: 25%;
+
+}
+.main_noti_nav a{
+    display: block;
+    text-align: center;
+    color: #ADB5BD;
+    font-size: 1.12rem;
+    font-weight: 600;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+
+
+
+
+.main_time > div{
+    flex: 4;
+    width: 100%;
+    height: 22rem;
+    position: relative;
+    background-color: #111987;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main_time h5{
+    font-size: 1.75rem;
+    font-weight: 600;
+    position: relative;
+    color: #009BA9;
+    display: block;
+    margin: auto;
+}
+
+.main_time span{
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+
+.main_time p{
+    line-height: 2.2rem;
+    word-break: keep-all;
+    letter-spacing: -1px;
+    color: #8B8BCE;
+    display: block;
+    margin: auto;
+}
 
 
 
@@ -676,19 +860,18 @@ tbody a{
 
 
 
-
-
+/* 메인 갤러리 */
 
 
 .gallery{
     width: 100%;
-    padding-top: calc(825 / 1440 *100%);
+    padding-top: 995px;
     position: relative;
     z-index: 3;
     background-image: url(../img/index/culture-bg2\ 1.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover ;
+    background-size: 1920px auto;
 }
 
 
@@ -701,7 +884,7 @@ tbody a{
     position: relative;
     top: 0px;
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: #f9f9f9;
     padding: 100px 0;
 }
 
@@ -757,9 +940,11 @@ tbody a{
     }
     
 
-    .sub_nav > ul, .inner, .inner2, .notice{
+    .sub_nav > ul, .inner, .inner2, .notice, .card_wrap{
         width: 1000px;
     }
+    
+
 
     .sub_nav > ul{
         height: 56px;
@@ -831,7 +1016,9 @@ tbody a{
         width: 95%;
     }
 
-
+    .card{
+        margin: auto;
+    }
 
     .sec1 p, .sec2 p{
         line-height: 1.8rem;
@@ -921,6 +1108,28 @@ tbody a{
     .form_srch{
         width: 100%;
         margin-top: 10px;
+    }
+
+    /* index 메인페이지 */
+
+    .card_wrap{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    
+    .card{
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 30px;
+    }
+
+    .card >li{
+        position: relative;
+        width: calc(25% - 10px);
+        margin: 0 5px;
+        box-sizing: border-box;
     }
 
 }
