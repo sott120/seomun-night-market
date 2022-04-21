@@ -13,7 +13,9 @@ html {
 .white {
     color: #fff !important;
 }
-
+.hidden{
+    overflow: hidden;
+}
 header {
     width: 100%;
     height: 90px;

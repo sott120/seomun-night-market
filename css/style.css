@@ -602,7 +602,7 @@ tbody a {
 .bnr_wrap p {
     color: #fff;
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
@@ -625,7 +625,7 @@ tbody a {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     left: 10%;
     color: #111987;
     font-weight: 600;
@@ -636,6 +636,14 @@ tbody a {
     width: 50px;
     height: 3px;
     background-color: #adb5bd;
+}
+
+.slide_nav >span:first-child{
+    padding-right: 10px;
+}
+
+.slide_nav >span:last-child{
+    padding-left: 10px;
 }
 
 .slide_nav_ac {
@@ -714,7 +722,7 @@ tbody a {
     line-height: 1.5;
     color: #fff;
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 .card span {
@@ -817,13 +825,17 @@ tbody a {
 }
 
 .main_noti_cont {
-    padding-right: 1.5rem;
+    width: 70%;
     box-sizing: border-box;
 }
 
 .main_noti_cont span {
+    display: block;
     color: #343a40;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
 }
 
 .main_noti_cont p {
@@ -854,15 +866,14 @@ tbody a {
 }
 
 .main_time > div {
-    position: relative;
     flex: 4;
-    height: 25rem;
     position: relative;
-    background-color: #111987;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     padding: 75px 20px;
     box-sizing: border-box;
+    background-color: #111987;
 }
 
 .main_time > div::before {
@@ -914,17 +925,24 @@ tbody a {
     background-position: center center;
     background-size: 1920px auto;
 }
-
-.gall_wrap {
+.gallery .main_tile{
     position: absolute;
-    top: 50%;
+    top: 25%;
+    
+}
+.gall_img{
+    position: absolute;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    overflow-x: scroll;
 }
-
-.gall_img {
+.gall_img >div{
     width: 1190px;
     height: 100%;
+    margin: auto;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -1184,13 +1202,17 @@ tbody a {
         text-align: center;
     }
     .main_time {
-        margin-top: 70px;
+        margin-top: 120px;
     }
     .icon_cate {
         padding: 0 0 50px;
     }
     .gallery {
         background-size: 1626px auto;
+    }
+
+    .cate_list > li {
+        width: 16%;
     }
 }
 
@@ -1347,6 +1369,10 @@ tbody a {
     }
 
     /* 메인페이지 */
+    .main_title span{
+        display: block;
+    }
+
     .main_tile {
         padding-bottom: 2rem;
     }
@@ -1360,7 +1386,7 @@ tbody a {
     }
 
     .main_noti_cont {
-        padding-right: 0;
+        width: 100%;
     }
 
     .gallery {
