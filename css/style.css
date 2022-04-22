@@ -20,13 +20,18 @@ main {
     background-size: cover;
 }
 
-.bg_img1 {
-}
+
+
 .bg_img2 {
     background-image: url(../img/bg_subvisual2.png);
 }
+
 .bg_img3 {
     background-image: url(../img/bg_subvisual3.png);
+}
+
+.bg_img4 {
+    background-image: url(../img/bg_subvisual4.png);
 }
 
 .nav_bg h2 {
@@ -36,6 +41,7 @@ main {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .sub_nav {
     width: 100%;
     background-color: #fff;
@@ -46,7 +52,7 @@ main {
     z-index: 100;
 }
 
-.sub_nav > ul {
+.sub_nav>ul {
     width: 1190px;
     margin: auto;
     display: flex;
@@ -55,7 +61,7 @@ main {
     height: 68px;
 }
 
-.sub_nav > ul a {
+.sub_nav>ul a {
     position: relative;
     font-size: 1.12rem;
     text-align: center;
@@ -199,7 +205,7 @@ main {
     text-align: center;
 }
 
-.inner2 > h3 {
+.inner2>h3 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #111987;
@@ -286,7 +292,7 @@ main {
     box-sizing: border-box;
 }
 
-.sec4 .inner > div {
+.sec4 .inner>div {
     width: calc(100% - 20px);
     height: 22rem;
     position: relative;
@@ -297,7 +303,7 @@ main {
     box-sizing: border-box;
 }
 
-.sec4 .inner > div::after {
+.sec4 .inner>div::after {
     content: "";
     position: absolute;
     top: 0;
@@ -340,14 +346,17 @@ main {
     display: block;
     margin: auto;
 }
+
 /**********************공지사항페이지*********************/
 
-.notice {
+.notice,
+.thumnail {
     width: 1190px;
     margin: auto;
 }
 
-.notice h3 {
+.notice h3,
+.thumnail h3 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #111987;
@@ -436,7 +445,7 @@ main {
     position: relative;
 }
 
-.form_srch > input {
+.form_srch>input {
     position: relative;
     width: 100%;
     height: 55px;
@@ -450,7 +459,7 @@ main {
     line-height: 1.5;
 }
 
-.form_srch > button {
+.form_srch>button {
     position: absolute;
     top: 0;
     right: 0;
@@ -465,7 +474,7 @@ main {
     background-position: center center;
 }
 
-.table_wrap > table {
+.table_wrap>table {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529 !important;
@@ -536,7 +545,8 @@ tbody a {
 .pn .active {
     background-color: #111987;
 }
-.pn .active > a {
+
+.pn .active>a {
     color: #fff;
 }
 
@@ -552,15 +562,18 @@ tbody a {
     background-image: url(../img/page-prevgroup.png);
     background-size: 10px auto;
 }
+
 .pn .prev {
     background-image: url(../img/page-prev.png);
     background-size: 8px auto;
 }
+
 .pn .next {
     background-image: url(../img/page-prev.png);
     background-size: 8px auto;
     transform: scale(-1, 1);
 }
+
 .pn .last {
     background-image: url(../img/page-prevgroup.png);
     background-size: 10px auto;
@@ -575,6 +588,7 @@ tbody a {
     position: relative;
     margin-bottom: 3rem;
 }
+
 .bnr_wrap {
     width: 100%;
     height: 100%;
@@ -632,17 +646,17 @@ tbody a {
     z-index: 3;
 }
 
-.slide_nav > span:nth-child(3) {
+.slide_nav>span:nth-child(3) {
     width: 50px;
     height: 3px;
     background-color: #adb5bd;
 }
 
-.slide_nav >span:first-child{
+.slide_nav>span:first-child {
     padding-right: 10px;
 }
 
-.slide_nav >span:last-child{
+.slide_nav>span:last-child {
     padding-left: 10px;
 }
 
@@ -693,7 +707,7 @@ tbody a {
     margin-left: -5px;
 }
 
-.card > li {
+.card>li {
     position: relative;
     width: calc(25% - 10px);
     margin: 0 5px;
@@ -725,6 +739,7 @@ tbody a {
     font-weight: 400;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
+
 .card span {
     position: absolute;
     top: 80px;
@@ -767,9 +782,10 @@ tbody a {
     background-color: #ced4da;
 }
 
-.main_noti_nav > li {
+.main_noti_nav>li {
     width: 25%;
 }
+
 .main_noti_nav a {
     display: block;
     text-align: center;
@@ -780,7 +796,7 @@ tbody a {
     line-height: 3rem;
 }
 
-.main_noti_active > a {
+.main_noti_active>a {
     width: 100%;
     color: #111987;
 }
@@ -801,7 +817,7 @@ tbody a {
     flex-wrap: wrap;
 }
 
-.main_noti_wrap > div {
+.main_noti_wrap>div {
     width: 50%;
     padding: 1.5rem 0;
     box-sizing: border-box;
@@ -835,7 +851,7 @@ tbody a {
     font-weight: 600;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .main_noti_cont p {
@@ -865,7 +881,7 @@ tbody a {
     background-position: right 3px;
 }
 
-.main_time > div {
+.main_time>div {
     flex: 4;
     position: relative;
     height: 25rem;
@@ -876,7 +892,7 @@ tbody a {
     background-color: #111987;
 }
 
-.main_time > div::before {
+.main_time>div::before {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -925,12 +941,14 @@ tbody a {
     background-position: center center;
     background-size: 1920px auto;
 }
-.gallery .main_tile{
+
+.gallery .main_tile {
     position: absolute;
     top: 25%;
-    
+
 }
-.gall_img{
+
+.gall_img {
     position: absolute;
     top: 53%;
     left: 50%;
@@ -938,7 +956,8 @@ tbody a {
     width: 100%;
     overflow-x: scroll;
 }
-.gall_img >div{
+
+.gall_img>div {
     width: 1190px;
     height: 100%;
     margin: auto;
@@ -951,6 +970,7 @@ tbody a {
     width: 100%;
     height: auto;
 }
+
 /* 아이콘카테고리 섹션 */
 .icon_cate {
     position: relative;
@@ -967,7 +987,7 @@ tbody a {
     flex-wrap: wrap;
 }
 
-.cate_list > li {
+.cate_list>li {
     width: 14%;
 }
 
@@ -1001,12 +1021,208 @@ tbody a {
     padding: 19px 0;
 }
 
+
+
+/* 먹거리살거리 썸네일페이지 */
+
+.thum_srch {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border: 10px solid #232ba5;
+}
+
+.thum_srch>div {
+    width: 30%;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 20px;
+    background-color: #232ba5;
+    color: #fff;
+    font-size: 1.12rem;
+}
+
+.thum_srch>input {
+    position: relative;
+    width: 70%;
+    height: 55px;
+    padding: 15px 72px 15px 20px;
+    border: 1px solid #adb5bd;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.thum_srch>button {
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    background-color: #232ba5;
+    border: none;
+    outline: none;
+    background-image: url(../img/icon-search.png);
+    background-size: 29px 29px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.food_list {
+    padding: 100px 0;
+    width: 1190px;
+    margin: auto;
+}
+
+.food_list>ul {
+    width: calc(100% + 10px);
+    flex-wrap: wrap;
+}
+
+.food_list li {
+    width: calc(33.333% - 10px);
+    margin: 20px 0;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 2px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+}
+
+.food_img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.food_img>div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.food01 {
+    background-image: url(../img/thum/food01.jpg);
+}
+
+.food02 {
+    background-image: url(../img/thum/food02.jpg);
+}
+
+.food03 {
+    background-image: url(../img/thum/food03.jpg);
+}
+
+.food04 {
+    background-image: url(../img/thum/food04.jpg);
+}
+
+.food05 {
+    background-image: url(../img/thum/food05.jpg);
+}
+
+.food06 {
+    background-image: url(../img/thum/food06.jpg);
+}
+
+.food07 {
+    background-image: url(../img/thum/food07.jpg);
+}
+
+.food08 {
+    background-image: url(../img/thum/food08.jpg);
+}
+
+.food09 {
+    background-image: url(../img/thum/food09.jpg);
+}
+
+.food10 {
+    background-image: url(../img/thum/food10.jpg);
+}
+
+.food11 {
+    background-image: url(../img/thum/food11.jpg);
+}
+
+.food12 {
+    background-image: url(../img/thum/food12.jpg);
+}
+
+.food13 {
+    background-image: url(../img/thum/food13.jpg);
+}
+
+.food_txt {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.food_title {
+    font-size: 1.12rem;
+    color: #212529;
+
+}
+
+.food_sub {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #868e96;
+    margin-bottom: 8px;
+}
+
+.food_tag {
+    display: block;
+    float: left;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 50px;
+}
+
+.ko {
+    background-color: #009ba9;
+}
+
+.viet {
+    background-color: #8B8BCE;
+}
+
+.west {
+    background-color: #111987;
+}
+
+.jp {
+    background-color: #FF6767;
+}
+
+.dessert {
+    background-color: #FFB800;
+}
+
+.food_go {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    float: right;
+    color: #232ba5;
+}
+
 @media only screen and (max-width: 1190px) {
     html {
         font-size: 15px;
     }
 
-    .sub_nav > ul,
+    .sub_nav>ul,
     .inner,
     .inner2,
     .notice,
@@ -1014,7 +1230,7 @@ tbody a {
         width: 1000px;
     }
 
-    .sub_nav > ul {
+    .sub_nav>ul {
         height: 56px;
     }
 
@@ -1039,6 +1255,15 @@ tbody a {
         padding: 140px 0;
     }
 
+    .food_list {
+        width: 1000px;
+    }
+
+    .food_img {
+        height: 160px;
+
+    }
+
     /* max-width:1290px */
 }
 
@@ -1046,6 +1271,7 @@ tbody a {
     .dis_block {
         display: block;
     }
+
     .dis_block1000 {
         display: block;
     }
@@ -1053,6 +1279,7 @@ tbody a {
     .dis_none1000 {
         display: none;
     }
+
     .nav_bg {
         position: relative;
         z-index: -100;
@@ -1068,18 +1295,24 @@ tbody a {
     .bg_img2 {
         background-image: url(../img/bg_subvisual2_m.png);
     }
+
     .bg_img3 {
         background-image: url(../img/bg_subvisual3_m.png);
+    }
+
+    .bg_img4 {
+        background-image: url(../img/bg_subvisual4_m.png);
     }
 
     .sub_nav {
         top: 80px;
     }
 
-    .sub_nav > ul,
+    .sub_nav>ul,
     .inner,
     .inner2,
-    .notice {
+    .notice,
+    .food_list {
         width: 95%;
     }
 
@@ -1175,6 +1408,7 @@ tbody a {
         width: 100%;
         padding: 60px 0;
     }
+
     .card_wrap {
         width: 100%;
         overflow-x: scroll;
@@ -1188,7 +1422,7 @@ tbody a {
         margin: 30px;
     }
 
-    .card > li {
+    .card>li {
         position: relative;
         width: calc(25% - 10px);
         margin: 0 5px;
@@ -1198,21 +1432,35 @@ tbody a {
     .seperate {
         display: block;
     }
+
     .card_bnr article h2 {
         text-align: center;
     }
+
+    .main_noti_nav a {
+        height: 4rem;
+        line-height: 4rem;
+    }
+
     .main_time {
         margin-top: 120px;
     }
+
     .icon_cate {
         padding: 0 0 50px;
     }
+
     .gallery {
         background-size: 1626px auto;
     }
 
-    .cate_list > li {
+    .cate_list>li {
         width: 16%;
+    }
+
+    /* 먹거리살거리 썸네일페이지 */
+    .food_list li {
+        width: calc(50% - 10px);
     }
 }
 
@@ -1234,12 +1482,12 @@ tbody a {
         top: 50px;
     }
 
-    .sub_nav > ul {
+    .sub_nav>ul {
         width: 100%;
         justify-content: flex-start;
     }
 
-    .sub_nav > ul li {
+    .sub_nav>ul li {
         flex-shrink: 0;
     }
 
@@ -1298,6 +1546,7 @@ tbody a {
         width: 100%;
         margin-top: 20px;
     }
+
     .map_wrap {
         flex-direction: column;
         margin-top: 30px;
@@ -1308,6 +1557,7 @@ tbody a {
         height: 70vw;
         margin-bottom: 30px;
     }
+
     .sec3 {
         padding: 50px 0;
     }
@@ -1315,6 +1565,7 @@ tbody a {
     .sec4 {
         padding: 0 0 50px;
     }
+
     .sec4 .inner h3 {
         display: none;
     }
@@ -1328,6 +1579,7 @@ tbody a {
         width: 100%;
         padding: 30px 0;
     }
+
     .notice h3 {
         margin: 40px 0;
     }
@@ -1344,12 +1596,13 @@ tbody a {
         display: block;
         padding: 20px 0;
     }
+
     tbody td {
         display: block;
         padding: 0;
     }
 
-    tbody tr > * {
+    tbody tr>* {
         border: none;
         white-space: normal;
         text-align: left;
@@ -1369,7 +1622,7 @@ tbody a {
     }
 
     /* 메인페이지 */
-    .main_title span{
+    .main_title span {
         display: block;
     }
 
@@ -1381,7 +1634,7 @@ tbody a {
         display: block;
     }
 
-    .main_noti_wrap > div {
+    .main_noti_wrap>div {
         width: 100%;
     }
 
@@ -1394,7 +1647,16 @@ tbody a {
         background-size: 1243px auto;
     }
 
-    .cate_list > li {
+    .cate_list>li {
         width: 33.333%;
+    }
+
+       /* 먹거리살거리 썸네일페이지 */
+    .food_list li {
+        width: 100%;
+    }
+
+    .inner p.food_tag, .inner p.food_go{
+        width: auto;
     }
 }

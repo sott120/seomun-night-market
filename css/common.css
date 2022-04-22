@@ -13,7 +13,7 @@ html {
 .white {
     color: #fff !important;
 }
-.hidden{
+.hidden {
     overflow: hidden;
 }
 header {
@@ -146,6 +146,7 @@ footer {
     width: 30px;
     height: 30px;
     margin-right: 5px;
+    background-repeat: no-repeat;
 }
 
 .f_ico {
