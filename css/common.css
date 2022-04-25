@@ -158,6 +158,7 @@ footer {
     display: block;
     width: 30px;
     height: 30px;
+    background-repeat: no-repeat;
 }
 
 .f_ico a:first-child i {
