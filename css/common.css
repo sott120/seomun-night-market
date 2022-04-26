@@ -2,6 +2,7 @@ html {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
     word-break: keep-all;
+    color: #343a40;
 }
 
 .dis_block {
@@ -15,6 +16,9 @@ html {
 }
 .hidden {
     overflow: hidden;
+}
+.m100 {
+    margin: 100px;
 }
 header {
     width: 100%;
@@ -207,6 +211,9 @@ footer {
 }
 
 @media only screen and (max-width: 780px) {
+    .m100 {
+        margin: 50px;
+    }
     header {
         height: 50px;
     }
