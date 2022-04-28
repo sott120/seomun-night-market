@@ -958,7 +958,6 @@ tbody a:hover {
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
     overflow-x: scroll;
 }
 
@@ -1028,6 +1027,24 @@ tbody a:hover {
     padding: 19px 0;
 }
 
+.sns_wrap {
+    display: flex;
+    padding: 100px 0;
+}
+
+.yt {
+    width: 50%;
+    height: 319px;
+}
+
+.sns_view {
+    width: 20%;
+    display: block;
+}
+
+.sns_view > div {
+    width: 100%;
+}
 /* 먹거리살거리 썸네일페이지 */
 
 .thum_srch {
@@ -1087,6 +1104,7 @@ tbody a:hover {
 .food_list > ul {
     width: calc(100% + 10px);
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .food_list li {
@@ -1334,7 +1352,9 @@ tbody a:hover {
     .sec4 {
         padding: 140px 0;
     }
-
+    .gall_img {
+        width: 100%;
+    }
     .thum_srch {
         width: 980px;
     }
@@ -1534,6 +1554,10 @@ tbody a:hover {
         margin-top: 120px;
     }
 
+    .main_noti_btn:hover {
+        text-decoration: none;
+    }
+
     .icon_cate {
         padding: 0 0 50px;
     }
@@ -1676,7 +1700,9 @@ tbody a:hover {
         width: 100%;
         padding: 30px 0;
     }
-
+    .card > li:hover {
+        transform: translate(0, 0);
+    }
     .notice h3 {
         margin: 40px 0;
     }
@@ -1750,7 +1776,9 @@ tbody a:hover {
     .cate_list > li {
         width: 33.333%;
     }
-
+    .cate_list > li:hover {
+        text-decoration: none;
+    }
     /* 먹거리살거리 썸네일페이지 */
 
     .food_list {
@@ -1769,7 +1797,7 @@ tbody a:hover {
         border: 5px solid #232ba5;
     }
     .thum_srch > input {
-        width: 82%;
+        width: 92%;
     }
 
     /* 공지사항 뷰페이지 */
