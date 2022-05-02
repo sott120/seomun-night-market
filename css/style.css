@@ -1055,23 +1055,48 @@ tbody a:hover {
     padding: 19px 0;
 }
 
+.gray_sec {
+    background-color: #f9f9f9;
+    padding: 120px 0;
+}
 .sns_wrap {
     display: flex;
-    padding: 120px 0;
 }
 
 .yt {
     width: 70%;
-    height: 319px;
+    height: 460px;
 }
 
 .sns_view {
-    width: 20%;
-    display: block;
+    width: calc(30% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sns_view > div {
     width: 100%;
+    border-bottom: 1px solid #adb5bd;
+}
+
+.sns_view a {
+    padding-top: 20px 0 10px;
+    display: block;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.yout a:hover {
+    color: #c4302b;
+}
+
+.blog a:hover {
+    color: #2db400;
+}
+
+.fb a:hover {
+    color: #3b5998;
 }
 /* 먹거리살거리 썸네일페이지 */
 
@@ -1524,6 +1549,10 @@ tbody a:hover {
     .tour {
         background-image: url(../img/index/img_tourM.jpg);
     }
+
+    .gray_sec {
+        padding: 0 0 120px;
+    }
     /*****************공지사항*********************/
 
     .noti_top {
@@ -1839,6 +1868,11 @@ tbody a:hover {
 
     .gall_img {
         top: 58%;
+    }
+
+    .yt {
+        width: 100%;
+        height: 360px;
     }
     .cate_list > li {
         width: 33.333%;
