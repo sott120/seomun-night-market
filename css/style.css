@@ -666,6 +666,33 @@ tbody a:hover {
     background-color: #111987;
 }
 
+.bnr_img {
+    width: calc(1190px + 10px);
+    margin: 100px auto 50px;
+    overflow: hidden;
+}
+.bnr_img div {
+    width: 50%;
+    padding: 0 5px;
+}
+.bnr_img a {
+    display: block;
+    width: 100%;
+    height: 155px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.smart {
+    background-image: url(../img/index/img_smart.jpg);
+}
+
+.tour {
+    background-image: url(../img/index/img_tour.jpg);
+}
 /* 메인 카드배너 */
 
 .card_bnr {
@@ -982,6 +1009,7 @@ tbody a:hover {
     width: 100%;
     background-color: #f9f9f9;
     padding: 100px 0;
+    border-top: 1px solid #ced4da;
 }
 
 .cate_list {
@@ -1029,11 +1057,11 @@ tbody a:hover {
 
 .sns_wrap {
     display: flex;
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .yt {
-    width: 50%;
+    width: 70%;
     height: 319px;
 }
 
@@ -1480,6 +1508,22 @@ tbody a:hover {
         margin-right: 0;
     }
 
+    .bnr_img a {
+        height: 0;
+        padding-top: calc(400 / 488 * 100%);
+        border: none;
+        border-left: 1px solid #e6e6e6;
+        border-right: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .smart {
+        background-image: url(../img/index/img_smartm.jpg);
+    }
+
+    .tour {
+        background-image: url(../img/index/img_tourM.jpg);
+    }
     /*****************공지사항*********************/
 
     .noti_top {
@@ -1556,10 +1600,6 @@ tbody a:hover {
 
     .main_noti_btn:hover {
         text-decoration: none;
-    }
-
-    .icon_cate {
-        padding: 0 0 50px;
     }
 
     .gallery {
@@ -1753,6 +1793,33 @@ tbody a:hover {
         padding-bottom: 2rem;
     }
 
+    .bnr_img {
+        overflow: visible;
+        flex-direction: column;
+    }
+
+    .bnr_img div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bnr_img a {
+        display: block;
+        width: 100%;
+        padding-top: calc(155 / 488 * 100%);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .smart {
+        background-image: url(../img/index/img_smart.jpg);
+    }
+
+    .tour {
+        background-image: url(../img/index/img_tour.jpg);
+    }
     .main_noti_wrap {
         display: block;
     }
