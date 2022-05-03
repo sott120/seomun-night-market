@@ -1,10 +1,22 @@
+::-moz-selection{
+    background-color: #009BA9;
+    color: #fff; 
+}
+
+::selection{
+    background-color: #009BA9;
+    color: #fff;
+}
+
 html {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
     word-break: keep-all;
     color: #343a40;
 }
-
+a{
+    text-decoration-color: #212529;
+}
 .dis_block {
     display: none;
 }

@@ -1109,14 +1109,13 @@ tbody a:hover {
 .sns_view p {
     display: block;
     color: #343a40;
-    font-size: 1.25rem;
+    font-size: 1.12rem;
     font-weight: 600;
     text-align: right;
     transition: 0.2s ease-in-out;
 }
 
 .sns_view span{
-    font-size: 1.25rem;
     color: #343a40;
 }
 .yout a:hover p {
@@ -1871,13 +1870,14 @@ tbody a:hover {
     }
 
     .bnr_img {
-        overflow: visible;
+        
         flex-direction: column;
     }
 
     .bnr_img div {
         width: 100%;
         margin-bottom: 10px;
+        padding: 0;
     }
 
     .bnr_img a {
@@ -1885,6 +1885,7 @@ tbody a:hover {
         width: 100%;
         padding-top: calc(155 / 488 * 100%);
         border: none;
+        /* border-right: 1px solid #e6e6e6; */
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
