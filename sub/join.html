@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login_join.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
-
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                 </ul>
             </nav>
             <div class="login dis_none1000">
-                <a href="">로그인</a>
+                <a href="login.html">로그인</a>
             </div>
             <div class="ham dis_block1000">
                 <span></span>
@@ -45,72 +45,155 @@
         </div>
     </header>
     <main>
-        <div class="m100"></div>
-        <div class="container">
-            <div class="input-form-backgroud row">
-                <div class="input-form col-md-12 mx-auto">
-                    <h3 class="notice h3">회원가입</h3>
-                    <form class="validation-form" novalidate>
-                        <div class="row">
-                            <div class="col-md-6 mb-3"> <label for="name">이름</label> <input type="text"
-                                    class="form-control" id="name" placeholder="" value="" required>
-                                <div class="invalid-feedback"> 이름을 입력해주세요. </div>
+
+        <body class="bg-light">
+            <div class="container join_wrap">
+                <div class="py-5 text-center ">
+                    <h2>회원가입</h2>
+                    <p class="lead">서문시장야시장 셀러 여러분들을 진심으로 환영합니다!
+                        <br>식품셀러회원과 플리마켓셀러 유형을 구분하여 가입해주시기 바랍니다.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="order-md-1">
+                        <form>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn-lg btn-secondary">
+                                    <input type="radio" name="options" id="food_seller" autocomplete="off"> 식품셀러
+                                </label>
+                                <label class="btn-lg btn-secondary">
+                                    <input type="radio" name="options" id="flea_seller" autocomplete="off"> 플리마켓셀러
+                                </label>
                             </div>
-                            <div class="col-md-6 mb-3"> <label for="nickname">별명</label> <input type="text"
-                                    class="form-control" id="nickname" placeholder="" value="" required>
-                                <div class="invalid-feedback"> 별명을 입력해주세요. </div>
+                            <hr class="mb-4">
+                            <h4>회원 공통정보</h4>
+                            <div class="id_pw">
+                                <label class="mb-1">아이디</label>
+                                <input type="text" class="form-control mb-3" id="id" placeholder="5~20자의 영문과 숫자">
+
+                                <label class="mb-1">비밀번호</label>
+                                <input type="text" class="form-control mb-3" id="password" placeholder="5~20자의 영문과 숫자">
+
+                                <label class="mb-1">비밀번호 확인</label>
+                                <input type="text" class="form-control mb-3" id="password" placeholder="비밀번호를 확인할게요">
                             </div>
-                        </div>
-                        <div class="mb-3"> <label for="email">이메일</label> <input type="email" class="form-control"
-                                id="email" placeholder="you@example.com" required>
-                            <div class="invalid-feedback"> 이메일을 입력해주세요. </div>
-                        </div>
-                        <div class="mb-3"> <label for="address">주소</label> <input type="text" class="form-control"
-                                id="address" placeholder="서울특별시 강남구" required>
-                            <div class="invalid-feedback"> 주소를 입력해주세요. </div>
-                        </div>
-                        <div class="mb-3"> <label for="address2">상세주소<span class="text-muted">&nbsp;(필수
-                                    아님)</span></label> <input type="text" class="form-control" id="address2"
-                                placeholder="상세주소를 입력해주세요."> </div>
-                        <div class="row">
-                            <div class=" form-group col-md-8 mb-3"> <label for="exampleFormControlSelect1">Example select</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
+                            <hr class="mb-4">
+                            <div class="human_info">
+                                <label class="mb-1">이름</label>
+                                <input type="text" class="form-control mb-3" id="id">
+
+                                <label class="mb-1">성별</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender"
+                                        value="woman">
+                                    <label class="form-check-label" for="inlineRadio1">여자</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender" value="man">
+                                    <label class="form-check-label" for="inlineRadio2">남자</label>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label class="mb-1">생년월일</label>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control" id="birth_year" placeholder="년(4자)">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <select id="birth_month" class="form-control">
+                                                <option selected>월</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control" id="birth_day" placeholder="일">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            <div class="call_info">
+                                <label class="mb-1">전화번호</label>
+                                <input type="text" class="form-control mb-3" id="phone" placeholder="숫자만 기입해주세요">
+
+                                <label class="mb-1">이메일</label>
+                                <input type="text" class="form-control mb-3" id="email" placeholder="example@naver.com">
+                            </div>
+                            <hr class="mb-4">
+                            <h4>식품셀러 추가정보</h4>
+                            <div class="food_seller_info">
+                                <label class="mb-1">상호명</label>
+                                <input type="text" class="form-control mb-3" id="store_name">
+
+                                <label class="mb-1">주메뉴</label>
+                                <input type="text" class="form-control mb-3" id="food_name">
+
+                                <label class="mb-1">보조메뉴</label>
+                                <input type="text" class="form-control mb-3" id="sbfood_name">
+                                
+                                <label class="mb-1">식품분류코드</label>
+                                <select id="birth_month" class="form-control">
+                                    <option selected>선택해주세요</option>
+                                    <option>100-스테이크</option>
+                                    <option>101-소고기류</option>
+                                    <option>102-돼지고기류</option>
+                                    <option>103-내장류</option>
+                                    <option>104-닭,칠면조류</option>
+                                    <option>105-양고기류</option>
+                                    <option>106-해산물류</option>
+                                    <option>107-육류튀김류</option>
+                                    <option>108-해산물튀김류</option>
+                                    <option>109-꼬지류</option>
+                                    <option>110-밥류</option>
+                                    <option>111-면류</option>
+                                    <option>112-분식류</option>
+                                    <option>113-디저트류</option>
+                                    <option>114-전류</option>
+                                    <option>115-어묵류</option>
+                                    <option>116-무침류</option>
+                                    <option>117-야끼류</option>
+                                    <option>118-아이스크림/빙수류</option>
+                                    <option>119-음료</option>
                                 </select>
-                                <div class="invalid-feedback"> 가입 경로를 선택해주세요. </div>
                             </div>
-                            <div class="col-md-4 mb-3"> <label for="code">추천인 코드</label> <input type="text"
-                                    class="form-control" id="code" placeholder="" required>
-                                <div class="invalid-feedback"> 추천인 코드를 입력해주세요. </div>
-                            </div>
-                        </div>
-                        <hr class="mb-4">
-                        <div class="mb-4"></div>
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">가입
-                            완료</button>
-                    </form>
+                            <hr class="mb-4">
+                            <h4>플리마켓셀러 추가정보</h4>
+                            <div class="flea_seller_info">
+                                <label class="mb-1">매대명</label>
+                                <input type="text" class="form-control mb-3" id="flea_name">
+
+                                <label class="mb-1">판매제품 종류</label>
+                                <input type="text" class="form-control mb-3" id="product">
+                            </div>    
+                            <button class="w-100 btn btn-lg btn_main mt-5 mb-5" type="submit">회원가입</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="m100"></div>
+            <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
             <script>
-                window.addEventListener('load', () => {
-                    const forms = document.getElementsByClassName('validation-form');
-                    Array.prototype.filter.call(forms, (form) => {
-                        form.addEventListener('submit', function (event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
+                window.jQuery || document.write(
+                    '<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
             </script>
+            <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+                crossorigin="anonymous"></script>
+            <script src="form-validation.js"></script> -->
 
+        </body>
     </main>
     <footer>
         <div>

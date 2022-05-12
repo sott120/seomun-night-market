@@ -4,15 +4,17 @@ main {
     align-items: center;
 }
 
+
+
 .login_img {
     flex: 1;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background: url("../img/info_img5.jpg") no-repeat center / cover;
 }
 
 .nav-link {
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 4.9rem;
     color: #606569;
 }
 
@@ -21,10 +23,11 @@ main {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 .login_bg {
     flex: 1;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     padding: 0 10px;
     background-color: #e9ecef;
     display: flex;
@@ -39,7 +42,7 @@ main {
     max-width: 480px;
     height: 550px;
     margin: 0 10px;
-    box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 5%);
+    box-shadow: 1px 5px 10px 2px rgb(0 0 0 / 5%);
     border-radius: 0.25rem;
 }
 
@@ -67,19 +70,46 @@ main {
     color: #fff;
 }
 
-.login_span > a {
+.login_span>a {
     font-weight: 600;
     color: #212529;
 }
-.login_span > a:hover {
+
+.login_span>a:hover {
     color: #2732c8;
 }
 
-.login_span:not(:last-child) > a::after {
+.login_span:not(:last-child)>a::after {
     content: " |";
 }
-@media only screen and (max-width: 1190px) {
+
+
+/* 회원가입 */
+.join_wrap {
+    max-width: 480px;
 }
+.join_wrap h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #111987;
+}
+.join_wrap p{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.join_wrap h4{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1190px) {}
 
 @media only screen and (max-width: 1000px) {
     .login_img {
@@ -91,5 +121,16 @@ main {
     .nav-link {
         padding: 0.8rem 3rem;
         color: #606569;
+    }
+
+    .login_img {
+        height: 100vh;
+    }
+
+    .login_bg {
+        height: 100vh;
+    }
+    .form-row {
+    display: inline;
     }
 }
