@@ -1,4 +1,4 @@
-main {
+.login_all {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,6 +109,11 @@ main {
 .form-row {
     display: flex;
     justify-content: space-between;
+}
+.form-control {
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
 }
 
 .food_seller_info,
